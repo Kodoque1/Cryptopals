@@ -1,0 +1,95 @@
+############
+
+TODO:
+
+-Implement kasinski method
+-Ioc method
+-add support of multiple alphabet frequencies
+-Euclid proof DONE
+-euclid algorithm optimization DONE
+-finish AES128
+-b64_to_hex : handle last byte
+-handle length for pkcs7 function
+-Pycrypto doesn't handle padding
+-part2 - chall12 reuse the code for multiple case
+-challenge 14 - fully random too hard - fixed random text - eliminate the ugly hack for the inside loop
+- set 2 deal with bytearray juggling
+- cryptopal 20, not perfect result, check probability
+
+
+############
+
+NOTES:
+
+- hamming doesn't really work
+
+###########
+
+
+Care about precision
+Non an character helpful in key selection (see break keys and frequency analysis)
+bien nommer ses variables
+
+bytes and hex care ( advice from matasano to work on bytes )
+
+itemgetter to customize sort
+
+xrange vs range
+
+bytearray:
+	- bytes; fromhex
+
+chunk generator:
+	- create generator, step parameter of range function
+
+look at pgcd for enhanced chunk 
+
+revoir transpose text avec range/chunks 
+
+enhance keylength detection --> check normalization
+
+with hamming method care about text size
+
+break_keys not precise enough
+
+choose candidate for cryptanalysis
+
+Diffusion
+confusion concetp by claude shannon
+
+based on permutation and substitution
+
+confusion hide structure ; same for diffusion? 
+
+care about last indices in python, especially with zero and using negative interger
+
+Terms:
+
+Diffusion
+Confusion
+permutation
+substitution
+round key
+cipher
+cipher text
+plain text
+Kasinski
+IOC
+hamming
+superimposition
+frequency
+base64
+invmod
+linear congruence equation
+feistel
+substitution permutation network
+linear/differential cryptanalysis
+nonce -> signature pour éviter des attaques de rejeu
+IV
+pkcs7
+avalanche effect
+length extension attack
+kv distribution
+equidistribution dimensionality
+tempering matrix
+frobenius normal form
